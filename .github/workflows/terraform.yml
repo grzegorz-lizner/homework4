@@ -28,7 +28,7 @@ jobs:
         run: terraform validate
 
       - name: Terrafrom plan
-        run: terraform plan --out=terrafromplan
+        run: terraform plan --out=my-plan.tfplan
       
       - name: Listing files
         run: |
