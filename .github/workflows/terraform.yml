@@ -20,3 +20,12 @@ jobs:
 
       - name: Test Terrafrom version
         run: terraform version
+
+      - name: Terrafrom init
+        run: terraform init
+
+      - name: Terrafrom validate
+        run: terraform validate
+
+      - name: Terrafrom plan
+        run: terraform plan
