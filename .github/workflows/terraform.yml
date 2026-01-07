@@ -3,8 +3,6 @@ name: Deploy via terraform
 on:
   push:
     branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
   workflow_dispatch:
 
 jobs:
@@ -16,3 +14,9 @@ jobs:
 
       - name: List all dirs recursively
         run: ls -Rla
+
+      - name: Install Terraform
+        uses: hashicorp/setup-terraform@v3
+
+      - name: Test Terrafrom version
+        run: terrafrom version
