@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  build:
+  terraform-plan:
     runs-on: ubuntu-latest
     steps:
       - name: Download the code 
