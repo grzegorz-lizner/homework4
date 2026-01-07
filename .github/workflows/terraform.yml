@@ -19,4 +19,4 @@ jobs:
         uses: hashicorp/setup-terraform@v3
 
       - name: Test Terrafrom version
-        run: terrafrom version
+        run: terraform version
