@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  terraform-plan:
+  plan:
     runs-on: ubuntu-latest
     steps:
       - name: Download the code 
@@ -28,4 +28,9 @@ jobs:
         run: terraform validate
 
       - name: Terrafrom plan
-        run: terraform plan
+        run: terraform plan --out=terrafromplan
+      
+      - name: Listing files
+        run: |
+          echo "Listing files"
+          ls -l
