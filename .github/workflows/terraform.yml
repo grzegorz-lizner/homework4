@@ -64,3 +64,4 @@ jobs:
         run: |
           echo "Listing files"
           ls -l
+          cat my-homework-results.txt
