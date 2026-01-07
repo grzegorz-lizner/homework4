@@ -64,4 +64,5 @@ jobs:
         run: |
           echo "Listing files"
           ls -l
+          echo "Content of the created file"
           cat my-homework-results.txt
