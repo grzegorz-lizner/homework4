@@ -34,3 +34,9 @@ jobs:
         run: |
           echo "Listing files"
           ls -l
+
+      - name: Upload plan artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: terraform-plan
+          path: my-plan.tfplan

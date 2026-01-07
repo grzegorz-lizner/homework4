@@ -11,6 +11,6 @@ provider "local" {}
 
 # Create local file
 resource "local_file" "example_file" {
-  content  = "THIS IS CONTENT OF THE LOCAL FILE"
+  content  = "Content of the file created via GitHub Action"
   filename = "./my-homework-results.txt"
 }
